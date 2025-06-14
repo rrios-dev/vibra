@@ -1,5 +1,7 @@
 # Vibra
 
+[![npm version](https://img.shields.io/npm/v/vibra.svg)](https://www.npmjs.com/package/vibra)
+
 > A blazing fast, type-safe, and minimal state management library for TypeScript and JavaScript. Effortless reactivity, subscriptions, and memory safety in a tiny package.
 
 ## 🚀 Features
