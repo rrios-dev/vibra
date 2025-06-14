@@ -66,13 +66,41 @@ store.set(5);
 // Both subscribers are notified
 ```
 
+### Subscription Options
+```typescript
+const store = vibra(42);
+
+// Default behavior: callback is not called on subscribe
+store.subscribe(value => console.log('Changed:', value));
+
+// With callOnSubscribe: callback is called immediately with current value
+store.subscribe(
+  value => console.log('Current:', value),
+  { callOnSubscribe: true }
+);
+
+// Useful for initializing UI or state
+const userStore = vibra({ name: 'Alice' });
+userStore.subscribe(
+  user => updateUI(user),
+  { callOnSubscribe: true } // Update UI immediately
+);
+```
+
 ## 🧩 API Reference
 
 ### `vibra<T>(initialValue: T)`
 Returns a store object with:
 - `get(): T` — Get the current value
 - `set(value: T): void` — Set a new value (notifies subscribers if changed)
-- `subscribe(callback: (value: T) => void): () => void` — Subscribe to changes (immediately calls with current value). Returns an unsubscribe function.
+- `subscribe(callback: (value: T) => void, options?: SubscribeOptions): () => void` — Subscribe to changes. Returns an unsubscribe function.
+
+#### SubscribeOptions
+```typescript
+interface SubscribeOptions {
+  callOnSubscribe?: boolean; // If true, callback is called immediately with current value
+}
+```
 
 ## 💡 Why Vibra?
 - **Ultra-lightweight**: No bloat, just state

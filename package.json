@@ -1,6 +1,6 @@
 {
   "name": "vibra",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vibra: A blazing fast, type-safe, and minimal state management library for TypeScript and JavaScript. Effortless reactivity, subscriptions, and memory safety in a tiny package.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

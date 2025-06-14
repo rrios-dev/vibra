@@ -1,2 +1,2 @@
-export { default } from './vibra';
+export { default, type Vibra } from './vibra';
 export * from './types';
