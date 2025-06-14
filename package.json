@@ -1,7 +1,7 @@
 {
-  "name": "library-boilerplate",
+  "name": "vibra",
   "version": "1.0.0",
-  "description": "A lightweight, type-safe library boilerplate for TypeScript/JavaScript",
+  "description": "Vibra: A blazing fast, type-safe, and minimal state management library for TypeScript and JavaScript. Effortless reactivity, subscriptions, and memory safety in a tiny package.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,16 +15,22 @@
     "lint": "eslint src"
   },
   "keywords": [
-    "library",
-    "boilerplate",
+    "state-management",
+    "reactive",
     "typescript",
-    "javascript"
+    "javascript",
+    "store",
+    "observable",
+    "minimal",
+    "reactivity",
+    "vibra",
+    "library"
   ],
   "author": "Roberto Ríos <roberto@rrios.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rrios-dev/library-boilerplate"
+    "url": "https://github.com/rrios-dev/vibra"
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",

@@ -1,2 +1,2 @@
-export { default } from "./main";
-export * from "./types";
+export { default } from './vibra';
+export * from './types';
