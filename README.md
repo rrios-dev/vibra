@@ -102,6 +102,16 @@ interface SubscribeOptions {
 }
 ```
 
+## ⚛️ React Integration
+
+For React applications, we provide a dedicated package `vibra-react` that offers React hooks and components for seamless integration with Vibra stores. Check out the [vibra-react documentation](https://www.npmjs.com/package/vibra-react) for more details.
+
+```bash
+npm install vibra-react
+# or
+bun add vibra-react
+```
+
 ## 💡 Why Vibra?
 - **Ultra-lightweight**: No bloat, just state
 - **Predictable**: No magic, no proxies, no hidden behaviors
